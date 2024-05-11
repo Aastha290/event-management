@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #f4f4f4 url('photos/background.jpg') no-repeat center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+         .logo{
+          font-weight: bolder;
+          color: #fff;
+          font-size: 2.5rem;
+          text-decoration: none;
+      }
+      
+       .logo span {
+          color: #b04ab9;
+      }
+        
+        .login-container {
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-container h2 {
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .btn-submit {
+            background-color: #b04ab9;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .btn-submit:hover {
+            background-color: #9835a1;
+        }
+        
+        .btn-google {
+          background: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+            width: 30%;
+            margin: 0 auto;
+           display: block; 
+        }
+        
+        .btn-google:hover {
+            background-color: #b04ab9;
+        }
+        
+        .google-icon {
+            display: inline-block;
+            border-radius: .5rem;
+            vertical-align: middle;
+            margin-right: 10px;
+            height: 50%;
+            width: 50%;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .signup-link {
+            text-align: center;
+        }
+
+        .signup-link a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  <form>
+  <a href="#" class="logo"><span>Plan</span>Hub</a>
+    <div class="login-container">
+      <h2>Sign in With</h2>
+        <button onclick="signInWithGoogle()" class="btn-google">
+            <img src="photos/img11.png" alt="Google Icon" class="google-icon">
+        </button>
+
+        <div class="form-group">
+            <label for="email">User ID:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn-submit">Submit</button>
+        
+        <div class="signup-link">
+            Don't have an account? <a href="home.html">Sign up</a>
+        </div>
+    </div>
+  </form>
+
+    <script>
+        function signInWithGoogle() {
+            // Implement Google sign-in functionality here
+            alert("Sign in with Google clicked!");
+        }
+    </script>
+</body>
+</html>
